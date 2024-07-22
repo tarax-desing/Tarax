@@ -43,6 +43,9 @@ header h1 {
 header h1 span {
     font-size: 2rem;
 }
+/* enlaces de la barra de navegación */
+/* media query para modificar reglas:
+se aplican las reglas que hay dentro de la media query si la ventana del navegador mide un minimo de 480px */
 
 
 .navegacion {
@@ -64,6 +67,14 @@ header h1 span {
         justify-content: space-around;
     }
 
+}
+.navegacion a {
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
 .enlace {
@@ -133,23 +144,112 @@ header h1 span {
     padding-left: 0.3rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
-    
+
 }
 
 @media(min-width: 1200px) {
-    .container{
-        width:  1100px;
+    .container {
+        width: 1100px;
         margin: auto;
+
     }
 }
+
 .shadow {
     box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.37);
 
 }
-.servicios  {
+
+.servicios {
+    display: flex;
     text-align: center;
-  
+    border: 1px;
+    margin: 1rem;
+    flex-direction: column;
+
+
+}
+@media ( min-width: 768px)
+{
+    .servicios {
+        flex-direction: row;
+    }
 }
 section h2 {
     text-align: center;
 }
+
+.servicios h3 {
+    color: var(--primary);
+
+}
+
+.icono {
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--secundary);
+    border-radius: 58%;
+    padding: 1rem;
+
+}
+/* formulario */
+.formulario {
+    background-color: var(--primary);
+    /* widta ninimo de 80rem o 100% */
+    width: min (80rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius:  1rem;
+
+}
+.formulario fieldset {
+    border: none;
+}
+
+
+.formulario legend {
+    margin:  0 auto 2rem auto;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--dark);
+}
+.container-input { 
+    margin-bottom: 1rem;
+}
+.container-input label {
+    color: va;
+    font-weight: bold;
+   margin-bottom: 0.5rem;
+   display: block;
+   text-align:  left;
+}
+.container-input input,
+.container-input textarea {
+    width: 100%;
+    padding:  1rem;
+    border-radius:  0.5rem;
+    border:  .5px solid var(--secundary);
+}
+.enviar {
+    width: 100%;
+}
+@media ( min-width: 768px) {
+    /*  aplica grid 1 fila con dos columnas y dos filas con una columna */
+    .inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        column-gap: 1rem;
+
+    }
+}
+ .container-input:nth-child(3),
+ .container-input:nth-child(4)
+  {
+    grid-column: 1/3;
+ }
+ .boton .enviar {
+    width: 100%;
+
+ }

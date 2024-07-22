@@ -42,20 +42,20 @@
         <div class="container shadow">
 
             <section>
-               
-                    <h2>Servicios</h2>
-                    <div class="servicios">
+
+                <h2>Servicios</h2>
+                <div class="servicios">
 
                     <section>
                         <h3>Diseño web</h3>
-                        <img src="img/location.svg" alt="Icono localización">
+                        <img class="icono" src="img/location.svg" alt="Icono localización">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ducimus alias nobis eius,
                             maxime error, quaerat placeat in inventore perferendis delectus vel autem quasi mollitia
                             repudiandae quisquam eaque sed. Corrupti.</p>
                     </section>
                     <section>
                         <h3>Aplicaciones web</h3>
-                        <img src="img/world-www.svg" alt="icono mundo">
+                        <img class="icono" src="img/world-www.svg" alt="icono mundo">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, laudantium! Eveniet distinctio
                             quo impedit sed. Et quia, obcaecati vel, cupiditate facere neque consequatur reprehenderit
                             nulla odio, nobis delectus repudiandae recusandae!</p>
@@ -63,7 +63,7 @@
                     </section>
                     <section>
                         <h3>Woo Commerce</h3>
-                        <img src="img/shopping-bag.svg" alt="Icono compra">
+                        <img class="icono" src="img/shopping-bag.svg" alt="Icono compra">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo reiciendis illum officia fugit
                             repellat, minima vero praesentium quidem veritatis veniam reprehenderit amet culpa atque
                             ducimus
@@ -75,19 +75,38 @@
             <section>
                 <h2>Contacto</h2>
                 <!-- formulario -->
-                <form>
+                <form class="formulario">
                     <fieldset>
                         <legend>Contáctanos</legend>
-                        <label>Nombre</label>
-                        <input type="text" placeholder="Nombre">
-                        <label>Teléfono</label>
-                        <input type="text" placeholder="Teléfono">
-                        <label>Correo</label>
-                        <input type="text" placeholder="Correo">
-                        <label>Comentarios</label>
-                        <textarea></textarea>
-                        <input type="submit" value="Enviar">
+                        <div class=" inputs">
+                            <div class="container-input">
+
+                                <label>Nombre</label>
+
+                                <input type="text" placeholder="Nombre">
+
+                            </div>
+                            <div class="container-input">
+                                <label>Teléfono</label>
+                                <div class="container-input">
+                                    <input type="text" placeholder="Teléfono">
+                                </div>
+                                <label>Correo</label>
+                                <div class="container-input">
+                                    <input type="text" placeholder="Correo">
+                                </div>
+                                <label>Comentarios</label>
+                                <div class="container-input">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <input class="boton enviar" type="submit" value="Enviar">
+
                     </fieldset>
+
                 </form>
 
             </section>
