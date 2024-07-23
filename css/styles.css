@@ -3,8 +3,10 @@
     --dark: #353535;
     --primary: #e09600;
     --secundary: #8FC1BE;
+    --radio-borde: 0.5rem;
 }
 
+/* tipo y tamaño fuente */
 .roboto {
     font-family: "roboto", sans-serif;
 
@@ -13,6 +15,8 @@
 html {
     font-family: "roboto", sans-serif;
     font-size: 62.5%;
+    /* scrool animado */
+    scroll-behavior: smooth;
 }
 
 * {
@@ -24,6 +28,8 @@ body {
 }
 
 header h1 {
+    /* tamaño textos */
+    margin: 0.5rem;
     text-align: center;
     font-size: 4rem;
     color: var(--dark);
@@ -43,10 +49,27 @@ header h1 {
 header h1 span {
     font-size: 2rem;
 }
+
+h2 {
+    font-size: 3rem;
+
+}
+
+h3 {
+    font-size: 2rem;
+
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 /* enlaces de la barra de navegación */
 /* media query para modificar reglas:
 se aplican las reglas que hay dentro de la media query si la ventana del navegador mide un minimo de 480px */
 
+
+/* Barra de navegación */
 
 .navegacion {
     /* el punto significa=clase */
@@ -61,6 +84,8 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
 
 }
 
+/* media query modifica reglas, se aplican las que hay dentro */
+
 @media (min-width: 480px) {
     .navegacion {
         flex-direction: row;
@@ -68,6 +93,8 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
     }
 
 }
+
+/* enlaces barra de navegación */
 .navegacion a {
     padding: 1rem;
     color: var(--white);
@@ -75,6 +102,12 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
     font-weight: bold;
     font-size: 2rem;
     line-height: 1.5;
+
+}
+
+.navegacion a:hover {
+    background-color: var(--white);
+    color: var(--dark);
 }
 
 .enlace {
@@ -90,10 +123,11 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
     position: relative;
 }
 
+/* alinear hijos horizontal y vertical */
 .section-banner {
     position: absolute;
 
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
 
@@ -106,6 +140,7 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
 
 .section-banner img {
     width: 2rem;
+    margin-right: 0.5rem;
 }
 
 .section-banner p,
@@ -113,6 +148,11 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
     color: var(--white);
 }
 
+.section-banner p {
+    font-weight: 600;
+}
+
+/* alinear el icono  y el párrafo */
 .center-vertical {
     display: flex;
     align-items: center;
@@ -127,9 +167,12 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 0.5rem;
+    border-radius: var(--radio-borde);
     width: 90%;
     text-align: center;
 }
+
+/* media query para que el botón no ocupe todo el ancho para un mínimo de pantalla de 480px */
 
 @media (min-width: 480px) {
     .boton {
@@ -138,30 +181,39 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
 
 }
 
+/* contenedor principal, todo el main */
 .container {
     background-color: var(--white);
     padding: 1rem;
-    padding-left: 0.3rem;
     border-radius: 0.5rem;
+    border-radius: var(--radio-borde);
     margin-top: 1rem;
 
 }
 
+/* media query si la pantalla mide un mínimo de 1200px (pc), establece un ancho fijo del contenedor y lo centra */
 @media(min-width: 1200px) {
     .container {
         width: 1100px;
-        margin: auto;
+        margin: 2rema auto;
 
     }
 }
 
+/* clases que definen las sombras */
+
 .shadow {
-    box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.37);
+    box-shadow: 2px 6px 3px 8px rgba(0, 0, 0, 0.57);
 
 }
 
+.shadow-small {
+    box-shadow: 4px 4px 8px 0px rgba(194, 194, 194, 0.7);
+}
+
+/* centra todos los textos que haya dentro de las etiquetas section */
 .servicios {
-    display: flex;
+
     text-align: center;
     border: 1px;
     margin: 1rem;
@@ -169,18 +221,27 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
 
 
 }
-@media ( min-width: 768px)
-{
+
+.contenedor-servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+/* media query para pantallas con un mínimo de 768px establece que los hijos se alineen en una fila */
+
+@media (min-width: 768px) {
     .servicios {
         flex-direction: row;
     }
 }
+
 section h2 {
     text-align: center;
 }
 
 .servicios h3 {
     color: var(--primary);
+    border-radius: var(--radio-borde);
 
 }
 
@@ -192,6 +253,15 @@ section h2 {
     padding: 1rem;
 
 }
+
+/* separa las líeneas de los párrafos al doble de la medida por defecto */
+
+.contenedor-servicios p {
+    line-height: 2;
+    margin: 1rem;
+    text-align: justify;
+}
+
 /* formulario */
 .formulario {
     background-color: var(--primary);
@@ -199,42 +269,64 @@ section h2 {
     width: min (80rem, 100%);
     margin: 0 auto;
     padding: 2rem;
-    border-radius:  1rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border-radius: var(--radio-borde);
 
 }
+
 .formulario fieldset {
     border: none;
 }
 
 
-.formulario legend {
-    margin:  0 auto 2rem auto;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--dark);
+.formulario {
+
+    margin: 0 auto;
+    width: min(80rem 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border-radius: var(--radio-borde);
+
 }
-.container-input { 
+
+.formulario legend {
+    font-size: medium;
+    margin: 0 auto;
+}
+
+.container-input {
     margin-bottom: 1rem;
 }
+
 .container-input label {
-    color: va;
+    color: var(--white);
     font-weight: bold;
-   margin-bottom: 0.5rem;
-   display: block;
-   text-align:  left;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: left;
 }
+
 .container-input input,
 .container-input textarea {
     width: 100%;
-    padding:  1rem;
-    border-radius:  0.5rem;
-    border:  .5px solid var(--secundary);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: .5px solid var(--secundary);
+    border-radius: var(--radio-borde);
+    border: none;
 }
+
 .enviar {
     width: 100%;
+    border: none;
+    margin-top: 1rem;
 }
-@media ( min-width: 768px) {
+
+@media (min-width: 768px) {
+
     /*  aplica grid 1 fila con dos columnas y dos filas con una columna */
     .inputs {
         display: grid;
@@ -244,12 +336,32 @@ section h2 {
 
     }
 }
- .container-input:nth-child(3),
- .container-input:nth-child(4)
-  {
+
+/* margen entre columnas */
+
+.container-input:nth-child(3),
+.container-input:nth-child(4) {
     grid-column: 1/3;
- }
- .boton .enviar {
+}
+
+.boton .enviar {
     width: 100%;
 
- }
+}
+
+.container-input textarea {
+    height: 15rem;
+}
+
+/************************************************************************/
+
+/* footer */
+footer p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer span {
+    color: var(--primary);
+    font-size: 2rem;
+}

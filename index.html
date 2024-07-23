@@ -9,23 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
-
     <!-- enlaces a los estilos -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/fav-apple.ico" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-
+    <header id="inicio">
         <h1>Elena. <span>Marketing digital.</span> </h1>
-
+        <!-- barra de navegación -->
         <nav class="navegacion">
-            <a class="enlace" href="#">Inicio</a>
+            <a class="enlace" href="#inicio">Inicio</a>
             <a class="enlace" href="#">Sobre mí</a>
-            <a class="enlace" href="#">Trabajos</a>
-            <a class="enlace" href="#">Contacto</a>
+            <a class="enlace" href="#trabajos">Trabajos</a>
+            <a class="enlace" href="#contacto">Contacto</a>
         </nav>
+        <!-- fin barra de navegación -->
         <div class="banner">
             <section class="section-banner">
                 <h2>Diseño y desarrollo web</h2>
@@ -35,88 +34,87 @@
                 </div>
                 <a class="boton" href="contacto.html">contacto</a>
             </section>
+            <!-- fin sección banner -->
         </div>
     </header>
     <!-- inicio main -->
     <main>
         <div class="container shadow">
-
-            <section>
-
+            <section id="trabajos">
                 <h2>Servicios</h2>
                 <div class="servicios">
+                    <section class="section-servicios">
+                        <section class="section-servicios shadow small">
+                            <h3>Diseño web</h3>
+                            <img class="icono shadow-small" src="img/location.svg" alt="Icono localización">
 
-                    <section>
-                        <h3>Diseño web</h3>
-                        <img class="icono" src="img/location.svg" alt="Icono localización">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ducimus alias nobis eius,
-                            maxime error, quaerat placeat in inventore perferendis delectus vel autem quasi mollitia
-                            repudiandae quisquam eaque sed. Corrupti.</p>
+                            <p>Ubicados en el corazón de esta vibrante ciudad, somos el punto de encuentro perfecto para
+                                quienes buscan calidad y comodidad. Nuestra posición estratégica te permite acceder
+                                fácilmente a nuestros servicios, ya sea que estés de paso o vivas aquí. Ven y descubre
+                                lo
+                                que tenemos preparado para ti.</p>
+                        </section>
                     </section>
-                    <section>
+                    <section class="section-servicios shadow-small">
                         <h3>Aplicaciones web</h3>
-                        <img class="icono" src="img/world-www.svg" alt="icono mundo">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, laudantium! Eveniet distinctio
-                            quo impedit sed. Et quia, obcaecati vel, cupiditate facere neque consequatur reprehenderit
-                            nulla odio, nobis delectus repudiandae recusandae!</p>
-
+                        <img class="icono shadow-small" src="img/world-www.svg" alt="icono mundo" />
+                        <p>Como diseñadores gráficos, ofrecemos una amplia gama de servicios profesionales para ayudarte
+                            a destacar y comunicar tu marca de manera efectiva. Diseño de Logotipos, Branding e
+                            Identidad Corporativa.</p>
                     </section>
-                    <section>
+                    <section class="section-servicios shadow-small">
                         <h3>Woo Commerce</h3>
-                        <img class="icono" src="img/shopping-bag.svg" alt="Icono compra">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo reiciendis illum officia fugit
-                            repellat, minima vero praesentium quidem veritatis veniam reprehenderit amet culpa atque
-                            ducimus
-                            commodi! Soluta error perspiciatis architecto!</p>
-                            <p>hola</p>
-                </div>
-            </section>
-            </section>
-            <!-- Fin sección servicios -->
-            <section>
-                <h2>Contacto</h2>
-                <!-- formulario -->
-                <form class="formulario">
-                    <fieldset>
-                        <legend>Contáctanos</legend>
-                        <div class=" inputs">
-                            <div class="container-input">
-
-                                <label>Nombre</label>
-
-                                <input type="text" placeholder="Nombre">
-
-                            </div>
-                            <div class="container-input">
-                                <label>Teléfono</label>
-                                <div class="container-input">
-                                    <input type="text" placeholder="Teléfono">
-                                </div>
-                                <label>Correo</label>
-                                <div class="container-input">
-                                    <input type="text" placeholder="Correo">
-                                </div>
-                                <label>Comentarios</label>
-                                <div class="container-input">
-                                    <textarea></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <input class="boton enviar" type="submit" value="Enviar">
-
-                    </fieldset>
-
-                </form>
-
+                        <img class="icono shadow-small" src="img/shopping-bag.svg" alt="Icono compra">
+                        <p>Nuestra empresa se distingue por ofrecer una combinación excepcional de calidad y precio
+                            competitivo. Trabajamos arduamente para garantizar que nuestros clientes reciban un servicio
+                            de primera categoría sin comprometer su presupuesto. Nuestro equipo altamente capacitado y
+                            nuestra atención personalizada nos permiten superar las expectativas de nuestros clientes.
+                        </p>
+                    </section>
             </section>
         </div>
+        <!-- Fin sección servicios -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <!-- formulario -->
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contáctanos</legend>
+                    <div class=" inputs">
+                        <div class="container-input">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div class="container-input">
+                            <label>Teléfono</label>
+                            <div class="container-input">
+                                <input type="text" placeholder="Teléfono">
+                            </div>
+                            <label>Correo</label>
+                            <div class="container-input">
+                                <input type="text" placeholder="Correo">
+                            </div>
+                            <div class="container-input">
+                                <label>Comentarios</label>
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <input class="boton enviar" type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
         <!-- fin del div container -->
     </main>
     <!-- fin main -->
     <footer>
-        <p>Todos los derechos reservados. Elena Marketing</p>
+        <p>Todos los derechos reservados.</p>
+        <p><span>®</span>Elena Marketing</p>
+        <p><a class="enlace" href="#inicio">Inicio</a></p>
+
+
+
     </footer>
 </body>
 
