@@ -183,6 +183,8 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
 
 /* contenedor principal, todo el main */
 .container {
+    /* display: flex; */
+    margin: auto;
     background-color: var(--white);
     padding: 1rem;
     border-radius: 0.5rem;
@@ -277,10 +279,17 @@ section h2 {
 
 .formulario fieldset {
     border: none;
+    width: 50rem;
+    justify-self: center; 
 }
 
 
 .formulario {
+    display: grid ;
+    grid-template-columns: auto;
+    grid-row: auto auto auto auto auto;
+    justify-content: center;
+   
 
     margin: 0 auto;
     width: min(80rem 100%);
