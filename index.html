@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/fav-apple.ico" type="image/x-icon">
 </head>
+
 <body>
     <header id="inicio">
         <h1>Elena. <span>Marketing digital.</span> </h1>
@@ -40,21 +41,21 @@
     <!-- inicio main -->
     <main>
         <div class="container shadow">
-            <section id="trabajos">
+            <section>
                 <h2>Servicios</h2>
-                <div class="servicios">
-                    <section class="section-servicios">
-                        <section class="section-servicios shadow small">
-                            <h3>Diseño web</h3>
-                            <img class="icono shadow-small" src="img/location.svg" alt="Icono localización">
+                <div class="contenedor-servicios">
 
-                            <p>Ubicados en el corazón de esta vibrante ciudad, somos el punto de encuentro perfecto para
-                                quienes buscan calidad y comodidad. Nuestra posición estratégica te permite acceder
-                                fácilmente a nuestros servicios, ya sea que estés de paso o vivas aquí. Ven y descubre
-                                lo
-                                que tenemos preparado para ti.</p>
-                        </section>
+                    <section class="section-servicios shadow small">
+                        <h3>Diseño web</h3>
+                        <img class="icono shadow-small" src="img/location.svg" alt="Icono localización">
+
+                        <p>Ubicados en el corazón de esta vibrante ciudad, somos el punto de encuentro perfecto para
+                            quienes buscan calidad y comodidad. Nuestra posición estratégica te permite acceder
+                            fácilmente a nuestros servicios, ya sea que estés de paso o vivas aquí. Ven y descubre
+                            lo
+                            que tenemos preparado para ti.</p>
                     </section>
+
                     <section class="section-servicios shadow-small">
                         <h3>Aplicaciones web</h3>
                         <img class="icono shadow-small" src="img/world-www.svg" alt="icono mundo" />
@@ -73,45 +74,52 @@
                     </section>
                 </div>
             </section>
-        </div>
-        <!-- Fin sección servicios -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <!-- formulario -->
-            <form class="formulario">
-                <fieldset>
-                    <legend>Contáctanos</legend>
-                    <div class="inputs">
-                        <div class="container-input">
-                            <label>Nombre</label>
-                            <input type="text" placeholder="Nombre">
-                        </div>
-                        <div class="container-input">
-                            <label>Teléfono</label>
+
+            <!-- Fin sección servicios -->
+
+
+            <section>
+                <h2>Contacto</h2>
+
+                <!-- Formulario -->
+                <form class="formulario">
+                    <fieldset>
+                        <legend>Contacta con el siguiente formulario</legend>
+                        <div class="inputs">
                             <div class="container-input">
-                                <input type="text" placeholder="Teléfono">
+                                <label>Nombre</label>
+                                <input type="text" placeholder="Nombre">
                             </div>
-                            <label>Correo</label>
+
                             <div class="container-input">
-                                <input type="text" placeholder="Correo">
+                                <label>Teléfono</label>
+                                <input type="tel">
+                            </div>
+                            <div class="container-input">
+                                <label>Email</label>
+                                <input type="email">
                             </div>
                             <div class="container-input">
                                 <label>Comentarios</label>
                                 <textarea></textarea>
                             </div>
                         </div>
-                    </div>
-                    <input class="boton enviar" type="submit" value="Enviar">
-                </fieldset>
-            </form>
-        </section>
-        <!-- fin del div container -->
-    </main>
-    <!-- fin main -->
-    <footer>
-        <p>Todos los derechos reservados.</p>
-        <p><span>®</span>Elena Marketing</p>
-        <p><a class="enlace" href="#inicio">Inicio</a></p>
-    </footer>
+
+                        <input class="boton enviar" type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </section>
+            <!-- fin seciton formulario -->
+        </div>
+        <!-- fin contenedor servicios -->
+        </div>
+        <!-- fin del div .container shadow-->
+        <!-- fin main -->
+        <footer>
+            <p>Todos los derechos reservados.</p>
+            <p><span>®</span>Elena Marketing</p>
+            <p><a class="enlace" href="#inicio">Inicio</a></p>
+        </footer>
 </body>
+
 </html>
