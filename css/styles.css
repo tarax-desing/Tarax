@@ -153,7 +153,7 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
 
 .boton {
     background-color: var(--secundary);
-    color: var(--primary)
+    color:var(--primary))
     padding: 1rem 3rem;
     font-size: 2rem;
     font-weight: bold;
@@ -181,7 +181,7 @@ se aplican las reglas que hay dentro de la media query si la ventana del navegad
     contiene todo el main
 */
 .container {
-    background-color: var(--white);
+    background-color: var(--secundary);
     padding: 1rem;
     border-radius: var(--radio-borde);
     margin-top: 1rem;
@@ -218,6 +218,7 @@ section  {
 .contenedor-servicios {
     display: flex;
     flex-direction: column;   
+    background-color: #f6fffe;
 }
 
 /* media query para pantallas con un mínimo de 768px
@@ -226,6 +227,7 @@ section  {
 @media (min-width: 768px){
     .contenedor-servicios{
         flex-direction: row;
+       
     }
 }
 
@@ -241,7 +243,7 @@ section  {
 .icono {
     height: 7rem;
     width: 7rem;
-    background-color: var(--secundary);
+    background-color: var(--primary));
     border-radius: 50%;
     padding: 1rem;
 }
